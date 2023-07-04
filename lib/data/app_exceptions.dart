@@ -30,6 +30,10 @@ class UnauthorisedException extends AppExceptions {
       : super(message, 'Unauthorised Request');
 }
 
-class InvalidInputException extends AppExceptions {
-  InvalidInputException([String? message]) : super(message, 'Invalid Request');
+class InvalidUrlException extends AppExceptions {
+  InvalidUrlException([String? message]) : super(message, 'Invalid Url');
+}
+
+class FetchDataException extends AppExceptions {
+  FetchDataException([String? message]) : super(message, 'Error occurred while communicating with server with status code: ');
 }
