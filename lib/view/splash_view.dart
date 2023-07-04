@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getx_mvvm/data/app_exceptions.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -12,6 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('email_hint'.tr),),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           throw InternetException("Found");
